@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R-Pay | Simple & Secure Payments</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f8fc;
+      color: #111827;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: #5b35d5;
+    }
+
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #374151;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 90px 7%;
+      text-align: center;
+      background: linear-gradient(135deg, #5b35d5, #7c4dff);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 28px;
+      background: white;
+      color: #5b35d5;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 65px 7%;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    .pay-box {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    .pay-box input {
+      width: 100%;
+      padding: 14px;
+      margin: 8px 0 16px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .pay-button {
+      width: 100%;
+      border: none;
+      padding: 15px;
+      background: #5b35d5;
+      color: white;
+      border-radius: 9px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">R-Pay</div>
+
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pay">Pay</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Payments Made Simple</h1>
+    <p>
+      R-Pay makes it easy for businesses and customers to make
+      secure online payments.
+    </p>
+    <a href="#pay" class="btn">Make a Payment</a>
+  </section>
+
+  <section class="section" id="features">
+    <h2>Why R-Pay?</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🔒 Secure</h3>
+        <p>Built with security in mind to protect payment information.</p>
+      </div>
+
+      <div class="card">
+        <h3>⚡ Fast</h3>
+        <p>Give customers a simple and convenient checkout experience.</p>
+      </div>
+
+      <div class="card">
+        <h3>📱 Mobile Money</h3>
+        <p>Designed for payment methods commonly used by customers in Ghana.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pay">
+    <h2>Make a Payment</h2>
+
+    <div class="pay-box">
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="e.g. 0240000000">
+
+      <label>Amount (GH₵)</label>
+      <input type="number" placeholder="Enter amount">
+
+      <button class="pay-button" type="button">
+        Continue to Payment
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 R-Pay. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
